@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <select id="at1">
+<option value="Uma vez ">Uma vez...</option>
+<option value="Num belo dia ">Num belo dia...</option>
+<option value="Numa noite chuvosa "> Numa noite chuvosa...</option>
+    </select>
+
+<select  id="at2">
+<option value="um peixe morreu afogado ">Um peixe morreu afogado</option>
+<option value="um gato tomou banho ">Um gato tomou banho</option>
+<option value="um corvo se curvou ">Um corvo se curvou</option>
+</select>
+
+<button onclick="clique()">Clique aqui</button>
+
+</select>
+</body>
+</html>
+<script>
+function clique() {
+    var p1 = at1.value
+    var p2 = at2.value
+    alert(`${p1+p2}`);
+}
+</script>

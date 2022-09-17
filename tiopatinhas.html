@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Tio Patinhas</h1><br>
+<div id="div_msg"></div><br>
+
+<button onclick="cents10()">10 centavos</button><br><br>
+<button onclick="cents50()">50 centavos</button><br><br>
+<button onclick="real1()">1 real</button><br><br>
+
+</body>
+</html>
+<script>
+    var total = 0;
+
+function cents10() {
+   total += 0.10
+    div_msg.innerHTML = `O saldo é : ${total}`;
+}
+function cents50() {
+    total += 0.50
+    div_msg.innerHTML = `O saldo é : ${total}`;
+}
+function real1() {
+    total += 1.00
+    div_msg.innerHTML = `O saldo é : ${total}`;
+
+}
+</script>
