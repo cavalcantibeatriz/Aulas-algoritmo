@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja</title>
+</head>
+
+<body style="color: rgb(5, 197, 250) ;
+background-color: black;
+
+ ">
+    <center>
+        <h4>Preços</h4>
+
+        <select id="sel_prod" style="color: aquamarine ; background-color: rgb(89, 83, 83);">
+            <option value="Isso custa R$5,00">Pão</option>
+            <option value="Isso custa R$8,00">Leite</option>
+            <option value="Isso custa R$3,00">Queijo</option>
+            <option value="Isso custa R$6,00">Arroz</option>
+        </select>
+        <br><br>
+
+        <button style="color: aquamarine; background-color: rgb(89, 83, 83); border-color: white;" onclick="preco() ">Ver preço</button>
+    </center>
+</body>
+
+</html>
+<script>
+    function preco() {
+        var valor = sel_prod.value;
+        alert(valor);
+    }
+</script>

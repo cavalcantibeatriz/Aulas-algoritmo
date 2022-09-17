@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Qual hobby quer praticar?</h1>
+    <select id="hob" onchange="faz()">
+        <option value="Dan">Dançar</option>
+        <option value="jog">Jogar vídeo game</option>
+        <option value="ass">Assistir seriados</option>
+        <option value="ouv">Ouvir rock</option>
+    </select><br>
+
+    <div id="div_msg"></div>
+</body>
+
+</html>
+<script>
+    var dancar = '<img id="img_foto" src="https://saude.abril.com.br/wp-content/uploads/2017/01/danc3a7a-fitness.jpg" style="width: flex;">';
+    var jogar = '<img id="img_foto" src="https://s2.glbimg.com/7Mrs12ncF1vH9hMmUUQErjlbHcs=/0x0:695x463/984x0/smart/filters:strip_icc()/s.glbimg.com/po/tt2/f/original/2016/12/15/331.jpg" style="width: 200px;">';
+    var assistir = '<img id="img_foto" src="https://s2.glbimg.com/6WQ2Ix5yOWX7i1YeRRq7mJ101nk=/0x0:695x463/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2021/z/V/XwDgDUR3CiGgYvRr6u7g/2016-02-19-netflix-tv-divulgacao.png" style="width: 200px;">';
+    var ouvir = '<img id="img_foto" src="https://institutoconectomus.com.br/wp-content/uploads/2013/06/ouvir-musica-faz-bem.jpg" style="width: 200px;">';
+    
+    function faz() {
+        if (hob.value == "Dan") {
+            dancar = '<img id="img_foto" src="https://saude.abril.com.br/wp-content/uploads/2017/01/danc3a7a-fitness.jpg" style="width: 600px;">' 
+            div_msg.innerHTML = dancar
+        } else if (hob.value == "jog") {
+            div_msg.innerHTML = jogar
+        } else if (hob.value == "ass") {
+            div_msg.innerHTML = assistir
+        } else {
+            div_msg.innerHTML = ouvir
+        }
+
+    }
+</script>

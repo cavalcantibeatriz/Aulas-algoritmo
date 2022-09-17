@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conte uma história</title>
+</head>
+<body>
+    <h1>MONTE FRASES</h1>
+    <select id="part1">
+        <option value="Uma vez ">Uma vez...</option>
+        <option value="Num belo dia ">Num belo dia...</option>
+        <option value="Numa noite chuvosa ">Numa noite chuvosa...</option>
+    </select>
+    <select id="part2">
+        <option value="um peixe morreu afogado!">um peixe morreu afogado</option>
+        <option value="um gato tomou banho!">um gato tomou banho</option>
+        <option value="um corvo se curvou!">um corvo se curvou</option>
+    </select> <br><br>
+<button onclick="monte()">Monte sua história</button>
+</body>
+</html>
+<script>
+function monte() {
+    var pt1 = part1.value;
+    var pt2 = part2.value;
+    alert(pt1+pt2);
+}
+</script>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESTAÇÕES DO ANO</title>
+</head>
+
+<body>
+    <H1>Selecione a estação do ano</H1>
+    <select id="esta" onchange="imgs()">
+
+        <option value="vera">Verão</option>
+        <option value="prim">Primavera</option>
+        <option value="inver">Inverno</option>
+        <option value="outo">Outono</option>
+    </select>
+    <div id="imagens"></div>
+</body>
+
+</html>
+<script>
+
+var verao = '<img id="img_foto" src="http://i.mlcdn.com.br/portaldalu/fotosconteudo/12123.jpg" style="width: 200px;">';
+var prima = '<img id="img_foto" src="http://dicas.viagempronta.com/wp-content/uploads/2019/02/holambra.jpg" style="width: 200px;">';
+var inv = '<img id="img_foto" src="https://www.fiocruz.br/biosseguranca/Bis/infantil/inverno1.jpg" style="width: 200px;">';
+var out = '<img id="img_foto" src="https://culturainglesacuritiba.com.br/wp-content/uploads/2020/09/outono-na-inglaterra.png" style="width: 200px;">';
+
+    function imgs() {
+
+        if(esta.value == "vera") {
+            imagens.innerHTML = verao
+        } else if(esta.value == "prim"){
+            imagens.innerHTML = prima
+        }else if(esta.value == "inver"){
+            imagens.innerHTML = inv
+        }else{
+            imagens.innerHTML = out
+        }
+    }
+</script>
