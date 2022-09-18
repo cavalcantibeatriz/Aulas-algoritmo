@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cofrinho</title>
+</head>
+
+<body>
+    <h1>COFRINHO</h1>
+    <select id="ipt_valor">
+        
+        <option value="0.05">0,05</option>
+        <option value="0.10">0,10</option>
+        <option value="0.25">0,25</option>
+        <option value="0.50">0,50</option>
+        <option value="1.00">1,00</option>
+
+    </select><br>
+
+    <button onclick="dep()">Depositar</button><br>
+    <button onclick="gast()">Gastar a Grana</button><br>
+    <div id="mensagem"></div>
+
+</body>
+
+</html>
+
+<script>
+    var saldo = 0.00
+    var vezes = 0
+    var media = 0
+
+    function dep() {
+        var valor = ipt_valor.value
+        saldo = Number(saldo)+Number(valor)
+        vezes ++
+        media = saldo/vezes
+     
+        mensagem.innerHTML = `O saldo do cofrinho é de: R$${saldo.toFixed(2)}<br>A quantidade de operações foi: ${vezes}<br>Média dos depósitos: R$${(media).toFixed(2)}<br><br>`;
+
+    }
+    function gast() {
+        saldo = 0
+        vezes = 0
+        media = 0
+        
+
+            mensagem.innerHTML += `O saldo do cofrinho é de: R$${saldo}<br>A quantidade de operações foi: ${vezes}<br>Média dos depósitos: R$${(media)}<br><br>`;
+
+
+    }
+
+
+</script>
